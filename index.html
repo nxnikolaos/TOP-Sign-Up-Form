@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" class="rel">
-    <title>Document</title>
+    <title>Sign-Up Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet"> 
@@ -32,42 +32,42 @@
             </div>
             <div class="form-container">
                 <h2>Let's do this!</h2>
-                <form>
+                <form action="example.com/path" methos="post">
                     <p>
                         <label for="first-name">
                             <span>FIRST NAME</span>
                         </label>
-                        <input type="text" id="first-name" name="userfirstname">
+                        <input type="text" id="first-name" name="userfirstname" maxlength="20" required>
                     </p>
                     <p>
                         <label for="last-name">
                             <span>LAST NAME</span>
                         </label>
-                        <input type="text" id="last-name" name="userlastname">
+                        <input type="text" id="last-name" name="userlastname" maxlength="30" required>
                     </p>
                     <p>
                         <label for="mail">
                             <span>EMAIL</span>
                         </label>
-                        <input type="email" id="mail" name="useremail">
+                        <input type="email" id="mail" name="useremail" maxlength="30" required>
                     </p>
                     <p>
                         <label for="phone-number">
                             <span>PHONE NUMBER</span>
                         </label>
-                        <input type="tel" id="phone-number" name="userphonenumber">
+                        <input type="tel" id="phone-number" name="userphonenumber" required>
                     </p>
                     <p>
                         <label for="password">
                             <span>PASSWORD</span>
                         </label>
-                        <input type="password" id="password" name="userpassword">
+                        <input type="password" id="password" class="error" name="userpassword" minlength="6" required>
                     </p>
                     <p>
                         <label for="confirm-password">
                             <span>CONFIRM PASSWORD</span>
                         </label>
-                        <input type="password" id="confirm-password" name="userconfirmpassword">
+                        <input type="password" id="confirm-password" class="error" name="userconfirmpassword" minlength="6" required>
                     </p>
                     
                 </form>
