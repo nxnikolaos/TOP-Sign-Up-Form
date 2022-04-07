@@ -32,7 +32,7 @@
             </div>
             <div class="form-container">
                 <h2>Let's do this!</h2>
-                <form action="example.com/path" methos="post">
+                <form action="#">
                     <p>
                         <label for="first-name">
                             <span>FIRST NAME</span>
@@ -55,7 +55,7 @@
                         <label for="phone-number">
                             <span>PHONE NUMBER</span>
                         </label>
-                        <input type="tel" id="phone-number" name="userphonenumber" required>
+                        <input type="tel" id="phone-number" name="userphonenumber"  pattern="[0-9]{10}" required>
                     </p>
                     <p>
                         <label for="password">
@@ -69,10 +69,15 @@
                         </label>
                         <input type="password" id="confirm-password" class="error" name="userconfirmpassword" minlength="6" required>
                     </p>
+                </div>
+                    <div class="form-footer">
+                        <input type="submit" value="Create Account">
+                        <p>
+                            Already have an account? <a href="#">Log In</a>
+                        </p>
+                    </div>
                     
-                </form>
-            </div>
-            <div class="form-footer"></div>
+                </form>            
         </div>
     </div>
     

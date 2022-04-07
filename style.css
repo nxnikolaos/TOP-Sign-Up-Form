@@ -92,6 +92,31 @@ form{
     flex-wrap: wrap;
 }
 
+.form-footer{
+    margin-top: 1rem;
+    background-color: #f9fafb;
+    padding:41.6px;
+}
+
+.form-footer input[type=submit]{
+    padding:1em 4.5em;   
+    color:#e88d4b;
+    background-color: #151623 ; 
+    border-color: #151623;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-footer p{
+    font-weight: bold;
+    color: #151623;
+}
+
+.form-footer p a{
+    color:#e88d4b;
+    text-decoration: none;
+}
+
 form p{
     flex-basis: 50%;
 }
